@@ -1,10 +1,12 @@
 var config = {
-    apiKey: "AIzaSyAW4lIDhhyiO6n1zfT-_DbVOiliAGi2UoE",
-    authDomain: "test-8dead.firebaseapp.com",
-    databaseURL: "https://test-8dead.firebaseio.com",
-    projectId: "test-8dead",
-    storageBucket: "test-8dead.appspot.com",
-    messagingSenderId: "219612670369",
+  apiKey: "AIzaSyB_6TsckCgz9kRj-0K6Zo9EmkTEziupjn4",
+    authDomain: "smurfo-3b51e.firebaseapp.com",
+    databaseURL: "https://smurfo-3b51e.firebaseio.com",
+    projectId: "smurfo-3b51e",
+    storageBucket: "smurfo-3b51e.appspot.com",
+    messagingSenderId: "15983497033",
+    appId: "1:15983497033:web:14bddbc78b36bbd93dd498",
+    measurementId: "G-7WPQH5GB0J"
   };
   firebase.initializeApp(config);
   
