@@ -15,16 +15,13 @@
 <link href="css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->
 <!-- //Custom Theme files -->
 
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 <!-- web-fonts -->  
 <link href="//fonts.googleapis.com/css?family=Arapey:400,400i" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i,600,600i,700" rel="stylesheet">
 <!-- //web-fonts -->
-<!-- <link href="css/sidebar.css" rel="stylesheet">
-<script src="js/sidebar.js"></script> -->
 
 <script>
 	$(document).ready(function(){
@@ -109,16 +106,33 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<button class="btn btn-lg" type="submit" style="color: white; background-color: transparent; border-color: transparent;">
+									<i class="glyphicon glyphicon-user"></i>
+								</button>
+							</li>
 							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 							<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
 							<li><a class="page-scroll scroll" href="#home">Home</a></li>
 							<li><a class="page-scroll scroll" href="#about">About</a></li>
 							<li><a class="page-scroll scroll" href="#classes">Category</a></li>
-							<li><a class="page-scroll scroll" href="#plans">Plans</a></li>
+							<!-- <li><a class="page-scroll scroll" href="#plans">Plans</a></li> -->
 							<li><a class="page-scroll scroll" href="#instructors">Instructors</a></li>
 
 							<li><a class="page-scroll scroll" href="#gallery">Gallery</a></li>
 							<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
+							<li><!-- Search form -->
+								<form class="form-inline d-flex justify-content-center form-sm">
+									<div class="input-group">
+									  <input type="text" class="form-control form-control-sm ml-3 w-75" placeholder="Search" style="background-color: transparent; color: #555; border: 1px solid #ecd907;">
+									  <div class="input-group-btn">
+										<button class="btn" type="submit" style="color: white; background-color: #ecd907; border-color: #ecd907;">
+										  <i class="glyphicon glyphicon-search"></i>
+										</button>
+									  </div>
+									</div>
+								  </form>
+							</li>
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
@@ -209,7 +223,7 @@
 						<div class="modal-content">
 							<div class="modal-header text-center">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<img src="img/2.jpg" alt=" " class="img-responsive">
+								<img src="img/choreoIT.jpg" alt=" " class="img-responsive">
 								<h5>Exclusive offer upto 50% on our 6-months course.</h5>
 								<a href="register.html"><button type="button" class="btn btn-danger">CLICK HERE TO REGISTER</button></a>
 							</div>
@@ -842,7 +856,7 @@
 			</script>
 
 		<!-- Map-JavaScript -->
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
+			<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
 			<script type="text/javascript">
 				google.maps.event.addDomListener(window, 'load', init);
 				function init() {
@@ -858,7 +872,7 @@
 						map: map,
 					});
 				}
-			</script>
+			</script> -->
 	<!-- //Map-JavaScript -->
 
 	
