@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/menu.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="//fonts.googleapis.com/css?family=Arapey:400,400i" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i,600,600i,700" rel="stylesheet">
+</head>
+<body>
+    
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+#uploader {
+                -webkit-appearance: search;
+                appearance: button;
+                width: 100%;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                background: rgb(12, 204, 44);
+            }
+
+body {
+  font-family:monospace;
+  color: rgb(31, 30, 30);
+  background-color: rgb(247, 243, 243);
+  
+}
+
+form {
+  max-width: 300px;
+  margin: 35px auto;
+  border-radius: 10px;
+  padding: 10px 50px;
+  position: relative;
+  align-content: center;
+  background: rgba(255,255,255,0.5);
+  background: linear-gradient(green, black);
+  
+  width: 800px;
+  
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  margin-top: 5px;
+  color:#fff;
+}
+
+.alert {
+  text-align: center;
+  padding: 5px;
+  background: rgb(168, 240, 177);
+  color: green;
+  margin-bottom: 5px;
+  display: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='age'],
+textarea,
+select {
+  background: rgb(245, 243, 243);
+  border: 10px;
+  margin-top: 10px;
+  box-shadow: 2px;
+  color: rgb(14, 13, 13);
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  height: auto;
+  font-size: 15px;
+}
+
+select {
+  padding: 1px;
+  height: 32px;
+  border-radius: 2px;
+  color:rgb(41, 40, 40);
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  display: block;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+label.light {
+  font-weight: 100;
+  display: inline;
+  color:#fff;
+}
+
+.section {
+  background-color: rgb(68, 114, 221);
+  color: rgb(5, 5, 5);
+  height: 1px;
+  display: inline-block;
+  width: 2px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 3px;
+  margin-right: 4px;
+  font-size: 0.7em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+  color:#fff;
+}
+
+button {
+  padding: 25px 40px;
+  color: rgb(26, 25, 25);
+  background-color: rgb(36, 159, 235);
+  font-size: 15px;
+  margin: 30px 0px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    max-width: 300px;
+    margin-top:20px;
+    margin-bottom:30px;
+  }
+}
+  body, html {
+	height: 106%;
+  }
+  
+  .parallax {
+    background-image: url('assets/dance.jpg.jp2');
+  
+	/* Full height */
+	height: 100%; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+    .parallax1 {
+	/* The image used */
+	 background: rgba(243, 240, 240, 0.91);
+	/* Full height */
+	height: 400px; 
+      
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  form {
+    max-width: 480px;
+    margin-top: 20%;	  
+  }
+  .size
+  {
+     margin-top:55px;
+ margin-bottom: 10px;
+  width:500px;
+  }
+  @media screen and (max-width: 480px) {
+  .size {
+    margin-top:55px;
+  margin-bottom: 10px;
+  width:300px;
+  }
+}
+ @media screen and (max-width: 767px) {
+  .size {
+   
+  margin-bottom: 18px;
+  width:300px;
+ 
+  }
+}
+</style>
+
+
+<div class="parallax">
+<div class="container">
+<div class="pull-right"> 
+<div class="btn-group mt-2"> 
+
+         </div>
+     </div>
+  <div class="center1 size">
+    
+    <form action="" method="POST" id="registrationform" >
+        <h3 style="font-family:monospace;" align="center" >Register</h3>
+        <div class="alert">Registered!</div>
+        <fieldset>
+          <!-- Section 1 -->
+          <legend style="font-color:#fff; font-family:monospace">Your Basic Info</legend>
+          <label style="font-family:monospace;"class="" for="name">Name</label>
+          <input type="text" name="name" value="" id="name" required /><br />
+    
+          <label style="font-family:monospace;" class="" for="email">Email</label>
+          <input type="email" name="email" value="" id="email" required />
+    
+          <label style="font-family:monospace;" class="" for="age">Age</label>
+          <input type="age" name="age" value="" id="age" required />
+
+          <label style="font-family:monospace;">Gender</label>
+          <select name="gender" id="gender" required>
+            <option style="font-family:monospace;" value="male">Male</option>
+            <option style="font-family:monospace;" value="female">Female</option>
+          </select>
+
+          <label style="font-family:monospace;" class="" for="location">Location</label>
+          <textarea name="location" id="location" required></textarea>
+
+        </fieldset>
+    
+        <fieldset>
+          <!-- section 2 -->
+          <legend style="font-family:monospace;">Profile</legend>
+    
+          <label style="font-family:monospace;" class="" for="bio">Bio</label>
+          <textarea name="bio" id="bio" required></textarea>
+
+          <br /><br />
+          <label style="font-family:monospace;">Experience</label>
+    
+          <select name="experience" id="experience" required>
+            <option style="font-family:monospace;" value="Beginner">Beginner</option>
+            <option style="font-family:monospace;" value="Intermediate">Intermediate</option>
+            <option style="font-family:monospace;" value="Advanced">Advanced</option>
+          </select>
+          
+          <progress class="progress-bar" value="0" max="100" id="uploader">100%</progress>
+          <input style="font-family:monospace;" class="btn btn-light" type="file" value="upload" id="fileButton"/>
+          
+          
+          <button style="font-family:monospace;" class="btn btn-success" type="submit" sendMessage()>Register</button>
+      </form>
+      
+  </div>
+</div>
+</div>
+<br><br><br>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="app.js"></script>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
