@@ -217,7 +217,7 @@ button {
           <input type="email" name="email" value="" id="email" required />
     
           <label style="font-family:monospace;" class="" for="age">Age</label>
-          <input type="age" name="age" value="" id="age" required />
+          <input type="number" name="age" value="" id="age" required />
 
           <label style="font-family:monospace;">Gender</label>
           <select name="gender" id="gender" required>
@@ -234,7 +234,7 @@ button {
           <!-- section 2 -->
           <legend style="font-family:monospace;">Profile</legend>
     
-          <label style="font-family:monospace;" class="" for="bio">Bio</label>
+          <label style="font-family:monospace;" class="" for="bio">Hobby</label>
           <textarea name="bio" id="bio" required></textarea>
 
           <br /><br />
@@ -250,7 +250,7 @@ button {
           <input style="font-family:monospace;" class="btn btn-light" type="file" value="upload" id="fileButton"/>
           
           
-          <button style="font-family:monospace;" class="btn btn-success" type="submit" sendMessage()>Register</button>
+          <button style="font-family:monospace;" class="btn btn-success" type="submit" onclick="sendMessage()">Register</button>
       </form>
       
   </div>
@@ -262,6 +262,23 @@ button {
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script src="app.js"></script>
     <script>
+function sendMessage(){
+  var input = document.getElementById("name").value;
+  var input1 = document.getElementById("email").value;
+  var inp = document.getElementById("location").value;
+  var input2 = document.getElementById("age").value;
+  var input3 = document.getElementById("gender").value;
+  var input4 = document.getElementById("bio").value;
+  var input5 = document.getElementById("experience").value;
+  
+  if(inp.trim() == ''||input.trim() == ''||input1.trim() == ''||input2.trim() == ''||input3.trim() == ''||input4.trim() == ''||input5.trim() == ''){
+    alert('please fill all the fields correctly!')
+  }
+  else{
+  alert('registeration done!')
+  window.location.replace("http://smurfohouse.in");
+  }
+}
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
